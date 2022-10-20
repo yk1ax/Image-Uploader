@@ -1,0 +1,27 @@
+.upload-card {
+    line-height: 3rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+  
+  .upload-box {
+    padding-top: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+    background-color: #F6F8FB;
+    border: 1px dashed #97BEF4;
+    border-radius: 10px;
+  }
+  
+  .instruction {
+    font-size: 0.7rem;
+    color: #BDBDBD;
+  }
+
+  .upload-btn {
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 20px;
+  }
