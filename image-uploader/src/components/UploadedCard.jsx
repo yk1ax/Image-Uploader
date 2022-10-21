@@ -13,7 +13,7 @@ export default function UploadedCard() {
                 <h3>Uploaded Successfully!</h3>
                 <img className="uploaded-img" src={imgSrc} alt="" />
                 <div className="copy-link">
-                    <input type="text" style={{ border: "none transparent", outline: "none", minWidth: "20px", borderRadius: "8px" }} readOnly />
+                    <input type="text" readOnly value={imgSrc} />
                     <Button style={{marginLeft: "auto"}} >Copy link</Button>
                 </div>
             </Card.Body>

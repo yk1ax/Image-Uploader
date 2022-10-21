@@ -47,3 +47,11 @@ input[type="file"] {
   border: 1px solid #E0E0E0;
   border-radius: 8px;
 }
+
+.copy-link input[type=text] {
+  border: none transparent;
+  outline: none;
+  border-radius: 8px;
+  margin-left: 2%;
+  font-size: 0.7rem;
+}
