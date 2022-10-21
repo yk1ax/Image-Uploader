@@ -3,7 +3,6 @@ import Card from 'react-bootstrap/Card';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Button from 'react-bootstrap/Button';
 
-
 export default function UploadedCard() {
     const imgSrc = "https://picsum.photos/400/300";
     return (
@@ -14,7 +13,7 @@ export default function UploadedCard() {
                 <img className="uploaded-img" src={imgSrc} alt="" />
                 <div className="copy-link">
                     <input type="text" readOnly value={imgSrc} />
-                    <Button style={{marginLeft: "auto"}} >Copy link</Button>
+                    <Button size="sm">Copy link</Button>
                 </div>
             </Card.Body>
         </Card>
