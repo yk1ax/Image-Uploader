@@ -5,8 +5,8 @@ import { Container, Row, Col } from "react-bootstrap";
 function App() {
   return (
     <Container className="App d-flex vh-100">
-      <Row className="m-auto">
-        <Col>
+      <Row className="m-auto w-100 justify-content-center">
+        <Col xs={5}>
           <CustomCard />
         </Col>
       </Row>

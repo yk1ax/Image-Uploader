@@ -1,18 +1,21 @@
+import { useState } from "react";
 import Card from 'react-bootstrap/Card';
-import UploadBox from "./UploadBox";
-import Button from 'react-bootstrap/Button'
+import UploadCard from "./UploadCard";
+import UploadingCard from "./UploadingCard"
+import UploadedCard from "./UploadedCard";
 
 function CustomCard() {
+
+  const [uploading, setUploading] = useState(true);
+  const [uploaded, setUploaded] = useState(false);
   return (
-    <Card className="upload-card p-3">
-      <Card.Body>
-      <h3>Upload your image</h3>
-      File should be Jpeg, Png...
-      <UploadBox />
-      </Card.Body>
-      <p className="instruction">Or</p>
-      <Button className="upload-btn" size="sm" variant="primary">Choose a file</Button>
-    </Card>
+    uploading ?
+      <UploadingCard />
+      :
+      uploaded ?
+        <UploadedCard />
+        :
+        <UploadCard />
   );
 }
 

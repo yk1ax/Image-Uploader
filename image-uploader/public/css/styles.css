@@ -1,27 +1,30 @@
-.upload-card {
-    line-height: 3rem;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+.card {
+  line-height: 3rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
-  
-  .upload-box {
-    padding-top: 25px;
-    font-family: sans-serif;
-    text-align: center;
-    width: 100%;
-    background-color: #F6F8FB;
-    border: 1px dashed #97BEF4;
-    border-radius: 10px;
-  }
-  
-  .instruction {
-    font-size: 0.7rem;
-    color: #BDBDBD;
-  }
+.upload-box {
+  padding-top: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+  background-color: #f6f8fb;
+  border: 1px dashed #97bef4;
+  border-radius: 10px;
+}
 
-  .upload-btn {
-    margin: auto;
-    width: fit-content;
-    margin-bottom: 20px;
-  }
+.instruction {
+  font-size: 0.7rem;
+  color: #bdbdbd;
+}
+
+.upload-btn {
+  margin: auto;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  display: none;
+}
