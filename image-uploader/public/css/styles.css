@@ -28,3 +28,22 @@
 input[type="file"] {
   display: none;
 }
+
+.done-icon {
+  transform: scale(2);
+  color: #219653;
+  margin-bottom: 30px;
+}
+
+.uploaded-img {
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.copy-link {
+  display:flex;
+  line-height: 1rem;
+  margin-top: 30px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+}
