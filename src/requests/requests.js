@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = process.env.BACKEND_URL || process.env.REACT_APP_BACKEND_URL;
+const URL = process.env.REACT_APP_BACKEND_URL || process.env.REACT_APP_LOCAL_BACKEND_URL;
 console.log(URL);
 
 function submitImage(imageData, onSuccess) {
