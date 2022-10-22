@@ -2,7 +2,7 @@ import React from "react";
 import Card from 'react-bootstrap/Card';
 import LinearProgress from '@mui/material/LinearProgress';
 
-export default function UploadingCard() {
+export default function DuringUploadCard() {
     return (
         <Card className="card p-3">
         <Card.Body >

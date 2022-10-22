@@ -1,21 +1,21 @@
 import { useState } from "react";
 import UploadCard from "./UploadCard";
-import UploadingCard from "./UploadingCard"
 import UploadedCard from "./UploadedCard";
 
-function CustomCard() {
+export default function CustomCard() {
 
-  const [uploading, setUploading] = useState(false);
-  const [uploaded, setUploaded] = useState(true);
+  const [uploaded, setUploaded] = useState(false);
+  const [fileName, setFileName] = useState("");
+
+  function onUpload(name) {
+    setFileName(name);
+    setUploaded(true);
+  }
+
   return (
-    uploading ?
-      <UploadingCard />
+    uploaded ?
+      <UploadedCard fileName={fileName} />
       :
-      uploaded ?
-        <UploadedCard />
-        :
-        <UploadCard />
+      <UploadCard onUpload={onUpload} />
   );
 }
-
-export default CustomCard;
