@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "http://localhost:3001";
+const URL = process.env.BACKEND_URL || process.env.REACT_APP_BACKEND_URL;
 
 function submitImage(imageData, onSuccess) {
     const data = new FormData();
